@@ -1,0 +1,21 @@
+{
+  "name": "Litmus Example – Tweets in CSS",
+  "description": "A simple Sinatra application that populates tweet content in CSS",
+  "repository": "https://github.com/litmus/example-css-tweets.git",
+  "success_url": "/tweets.css",
+  "env": {
+    "TWITTER_CONSUMER_KEY": {
+      "description": "Your Twitter Application API Key from https://apps.twitter.com",
+      "required": true
+    },
+    "TWITTER_CONSUMER_SECRET": {
+      "description": "Your Twitter Application API Secret from https://apps.twitter.com",
+      "required": true
+    },
+    "TWITTER_SEARCH_STRING": {
+      "description": "Your Twitter Search Terms (`-rt` means without retweets)",
+      "value": "#tedc15 -rt",
+      "required": true
+    }
+  }
+}
